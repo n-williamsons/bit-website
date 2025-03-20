@@ -1,5 +1,9 @@
 # MY PORTFOLIO
 
-    * Description: This repository will store the projects that we will be developing during the BootCamp
+## Description: 
 
-    * Author: Nicolas Williamson Silva
+This repository will store the projects that we will be developing during the BootCamp
+
+## Author: 
+
+Nicolas Williamson Silva - 2025
