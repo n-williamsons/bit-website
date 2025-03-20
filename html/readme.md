@@ -4,5 +4,5 @@
 
 ### AUTHOR: Nicolas Williamson - Junior Web Developer
 
-    * :pouting_cat: [Nicolas](https://github.com/n-williamsons)
-    * :briefcase: [Nicolas](https://linkedin.com/in/nicolasws17)
+* :pouting_cat: [GitHub](https://github.com/n-williamsons)
+* :briefcase: [LinkedIn](https://linkedin.com/in/nicolasws17)
