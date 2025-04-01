@@ -2,7 +2,7 @@
 
 ## Description: 
 
-This repository will store the projects that we will be developing during the BootCamp
+ * :briefcase: This repository will store the projects that we will be developing during the BootCamp
 
 ## Author: 
 
