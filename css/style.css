@@ -1,10 +1,108 @@
-/* General */
+/* Media Queries */
 
-* {
+/* Para pantallas menores o iguales a 992px */
+@media (max-width: 992px) {
+    body {
+        flex-direction: column; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .main {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .aside {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .nav {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .button {
+        width: 50%; 
+    }
+}
+
+/* Para pantallas menores o iguales a 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .main, .aside {
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    .button-container {
+        flex-direction: row; 
+        gap: 10px;
+    }
+
+    .button {
+        width: 80%; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+
+/* Para pantallas menores o iguales a 576px */
+@media (max-width: 576px) {
+    .nav {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .span-nav-2 {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .main, .aside {
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    .button-container {
+        flex-direction: row; 
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img-aside {
+        height: auto; 
+    }
+}
+
+
+/* General */
+*,
+*::before,
+*::after{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
 
 html {
 	background-color: #ebedef;
@@ -45,6 +143,8 @@ form {
 }
 
 
+
+
 /* Clases */
 
 .header {
@@ -57,14 +157,15 @@ form {
     display: flex;
 	position: fixed; 
     top: 0;
+    left: 0;
     background-color: #fff; 
     z-index: 1000; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px; 
     justify-content: space-between;
-    margin: 15px;
+    
     align-items: center;
-	width: 80%;
+	width: 100%;
 }
 
 .nav a {
@@ -175,12 +276,6 @@ form {
     align-items: center;
 }
 
-.span-footer {
-    justify-content: flex-start;
-    gap: 15px;
-}
-
-
 .span-footer a {
     text-decoration: none;
     color: #fff;
@@ -192,67 +287,3 @@ form {
     color: #ffd700;
 }
 
-
-
-/* Contact */
-
-.h2-contact{
-    font-size: 50px;
-
-}
-
-
-.submit-button{
-    background-color: #69152a;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-.submit-button:hover{
-    background-color: #88af2c;
-    color: #fff;
-    cursor: pointer;
-}
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; 
-    justify-content: space-between; 
-    width: 100%;
-    max-width: 1200px; 
-    margin: 50px auto; 
-    padding: 30px;
-    background-color: #f4f4f9; 
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-    gap: 20px; 
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column; 
-    flex: 2; 
-    gap: 8px; 
-    padding: 25px;
-    background-color: #fff;
-    border-radius: 10px;    
-    border: 1px solid #ddd;
-}
-
-.contact-form label {
-    font-weight: bold;
-    color: #333;
-}
-
-.contact-aside {
-    flex: 1; 
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 1px solid #ddd; 
-}
